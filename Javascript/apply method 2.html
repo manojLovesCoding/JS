@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Example apply() - 2</title>
+</head>
+
+<body>
+    <script type="text/javascript">
+        var arr1 = [1, 2, 3, 4];
+        var arr2 = [5, 6, 7, 8];
+
+
+        document.writeln("<h3>Example to join two array using apply()</h3>");
+
+        document.writeln("<br>");
+
+        document.writeln("First Array values are : ");
+
+        for (value of arr1) {
+            document.writeln(value);
+        }
+
+        document.writeln("<br>");
+
+        document.writeln("Second Array values are : ");
+
+        for (value of arr2) {
+            document.writeln(value);
+        }
+
+        arr1.push.apply(arr1, arr2);
+
+        document.writeln("<br>");
+
+        document.writeln("Concatenated array is : " + arr1);
+
+    </script>
+
+</body>
+
+</html>
