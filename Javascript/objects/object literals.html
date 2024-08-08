@@ -7,7 +7,7 @@
 
 <body>
     <script type="text/javascript">
-        /*creating an object using object literals*/
+        /* 1.creating an object using object literals*/
         document.writeln("<h3>Creating object in JS using Object literals</h3>");
         var person = {
             firstName: "Manoj",
@@ -16,7 +16,36 @@
             eyecolor: "brown"
         }
 
-        document.writeln("Object details are : " + person.firstName + " " + person.lastName)
+        document.writeln("Object details are : " + person.firstName + " " + person.lastName + "<br>")
+
+        /* 2.creating an object using new keyword (Insance of an object)*/
+        document.writeln("<h3>Creating object in JS using New Keyword</h3>");
+        var emp = new Object();
+
+        emp.id = 1;
+        emp.name = "Syyam Kumar";
+        emp.salary = 20000;
+
+        document.writeln("Object details of emp object : ")
+        for (value in emp) {
+            document.writeln(emp[value] + " ");
+        }
+
+        /* 3 creating an object using Object constructor*/
+        document.writeln("<h3>Creating object in JS using Object Constructor</h3>");
+
+        function employee(id, name, salary) {
+            this.id = id;
+            this.name = name;
+            this.salary = salary;
+        }
+
+        var e = new employee(2, "Prathik Patil", 40000);
+
+        document.writeln("Object details of employee object : ")
+        for (value in e) {
+            document.writeln(e[value] + " ");
+        }
     </script>
 
 </body>
