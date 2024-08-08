@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>1.Example apply() </title>
+</head>
+
+<body>
+    <script type="text/javascript">
+        var arr = [6, 4, 3, 8]
+        var max = Math.max.apply(null, arr);
+        var min = Math.min.apply(this, arr);
+
+        document.writeln("<h3>Example to find maximum and minimum number using apply()</h3>");
+
+        document.writeln("<br>");
+
+        document.writeln("Array values are : ");
+
+        for (value of arr) {
+            document.writeln(value);
+        }
+
+        document.writeln("<br>");
+
+        document.writeln("Maximum number is : " + max + "<br>");
+        document.writeln("Minimum number is : " + min);
+    </script>
+
+</body>
+
+</html>
