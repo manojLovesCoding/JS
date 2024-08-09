@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Example of assign method</title>
+</head>
+
+<body>
+    <script type="text/javascript">
+        var object1 = {
+            a: 1, b: 2, c: 3
+        }
+
+        const object2 = {
+            d: 1, e: 2, f: 3
+        }
+
+        var object3 = Object.assign({ c: 5, d: 6 }, object1);
+        const object4 = Object.assign({ g: 85, h: 100 }, object2)
+
+        console.log(object1, object3);
+        console.log(object4);
+
+        /*conculsion : adding new values in the existing valuesand tranferring it in the new object and that new object will be generated with the help of that*/
+    </script>
+</body>
+
+</html>
