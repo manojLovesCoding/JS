@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Example of Object.create()</title>
+</head>
+
+<body>
+    <script type="text/javascript">
+        function fruit() {
+            this.name = "Grapes";
+        }
+
+        function fun() {
+            fruit.call(this);
+        }
+
+        fun.prototype = Object.create(fruit.prototype);
+        const app = new fun();
+        console.log(app);
+
+        /*conclusion : whenever we want to create fun's object that time we will create fruit object.for that time we will use create method*/
+    </script>
+</body>
+
+</html>
