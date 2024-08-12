@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Array Methods Part 2</title>
+</head>
+
+<body>
+    <script type="text/javascript">
+        document.write("<h3>fill() : </h3>");
+        var language = ["html","java","c","Ruby",,"C#"];
+        var result1 = language.fill("JS");
+        document.writeln("Array after performing fill() :"+result1+"<br>");
+
+        var result2=language.fill("python",1,5);
+        document.writeln("Array after performing fill() on first position : "+result2+"<br>");
+
+
+        document.write("<h3>from() : </h3>");
+        var fromArray = Array.from("How are You");
+        document.writeln("Array after applying from() : " + fromArray);
+
+        var func=function(){
+        	document.writeln(Array.from(arguments));
+        }
+        document.writeln("<br>Array after applying from() on function : ");
+        func("html","java","c");
+
+
+        document.write("<h3>filter() : </h3>");
+        var nums = [20,61,41,31,51,34,19];
+
+        function check(value){
+            return value > 30;
+        }
+        document.writeln("num array after filter() : "+nums.filter(check));
+
+
+        document.write("<h3>find() : </h3>");
+        var findArray = nums.find(x => x>30);
+        document.writeln("num array after find() : "+findArray);
+
+
+        document.write("<h3>findIndex() : </h3>");
+        var findIndexArray = nums.findIndex(x => x>30);
+        document.writeln("num array after findIndex() : "+findIndexArray);
+
+        
+        document.write("<h3>forEach() : </h3>");
+        var value=0;
+        document.writeln("num array after forEach() : ");
+        nums.forEach(function(fetch){
+            document.writeln(value += fetch);
+        });
+
+    </script>
+
+</body>
+
+</html>
