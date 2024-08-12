@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Array Methods Part 5</title>
+</head>
+
+<body>
+    <script type="text/javascript">
+        document.writeln("<h3>unshift() : </h3>");
+        var num1 = [8,5,2];
+        var unshiftArray = num1.unshift(7);
+        document.writeln("Adding 7 in the begginning of the array : " + num1);
+
+
+        document.writeln("<h3>values() and next() : </h3>");
+        var weekdays = ["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday","Sunday"];
+        var valuesArray = weekdays.values();
+        document.writeln("Example1 : After adding an Iterator to weekdays Array : ");
+        /*for(value of valuesArray){
+            document.writeln(value + "<br>")
+;        }
+        console.log(valuesArray)*/
+
+        document.writeln("<br>Example2 : After adding an Iterator to weekdays Array : ");
+        document.writeln(valuesArray.next().value + "<br>");
+        document.writeln(valuesArray.next().value + "<br>");
+        document.writeln(valuesArray.next().value + "<br>");
+        document.writeln(valuesArray.next().value + "<br>");
+        document.writeln(valuesArray.next().value + "<br>");
+        document.writeln(valuesArray.next().value + "<br>");
+        document.writeln(valuesArray.next().value + "<br>");
+        document.writeln(valuesArray.next().value + "<br>");
+        /*Why iterable mainly used ? we have an array and there comes an object.now in object how many values or there.i dont know.so i have to work one by one if the next element is available then work on it,if next then work on it.if next element is not available then stop.*/
+
+    </script>
+
+</body>
+
+</html>

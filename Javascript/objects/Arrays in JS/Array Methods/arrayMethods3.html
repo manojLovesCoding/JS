@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Array Methods Part 3</title>
+</head>
+
+<body>
+    <script type="text/javascript">
+        document.writeln("<h3>includes() : </h3>");
+        var arr1 = ["c","c++","java","html","java"];
+        var arr2 = [50,45,40,30,15];
+
+        document.writeln("To check if array has value 'java' includes() : " + arr1.includes("java"));
+
+
+        document.writeln("<h3>indexOf() : </h3>");
+        document.writeln("Example1:To check the index of 'java' using indexOf() : " + arr1.indexOf("java"));
+        document.writeln("<br>Example2:To check the index of 'java' using indexOf() after 3rd position : " + arr1.indexOf("java",3));
+        document.writeln("<br>Example3:To check the index of 'Angular' using indexOf() after 3rd position : " + arr1.indexOf("Angular"));
+
+
+        document.writeln("<h3>isArray() : </h3>");
+        document.writeln("Example1:To check if the passed values are an Array using isArray() : " + Array.isArray(1,4,7,8));
+        document.writeln("<br>Example2:To check if arr1 is an Array or not : " + Array.isArray(arr1));
+
+
+        document.writeln("<h3>join() : </h3>");
+        document.writeln("arr1 after join() : " + arr1.join(' '));
+        document.writeln("<br>arr1 after join() : " + arr1.join(','));
+        document.writeln("<br>arr1 after join() : " + arr1.join('-'));
+
+
+         document.writeln("<h3>keys() : </h3>");
+         var keyArray = arr1.keys();
+         document.writeln("To check elements in keyArray array : " + keyArray + "<br>");
+         document.writeln("values in keyArray is : <br>");
+         for(k of keyArray){
+            document.writeln(k + "<br>");
+         }
+
+
+         document.writeln("<h3>lastIndexOf() : </h3>");
+         document.writeln("Example1:To check the index of 'java' using indexOf() : " + arr1.lastIndexOf("java"));
+
+
+         document.writeln("<h3>map() : </h3>");
+         var mapArray = arr2.map(x => x/5);
+         document.writeln("arr2 after performing map() : " + mapArray);
+    </script>
+
+</body>
+
+</html>
