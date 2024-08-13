@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Example String Method -1</title>
+</head>
+
+<body>
+    <script type="text/javascript">
+        document.writeln("<h3>charAt() : </h3>");
+        var str1 = "Hello ";
+        var str2 = "How are You?";
+        var str3 = "...";
+        var str4 = "mandy kumar";
+        var str5 = "We are learning javascript. Javascript is a wondderful Scripting language.";
+        document.writeln("Character at 5th position : " + str2.charAt(5));
+
+
+        document.writeln("<h3>charCodeAt() : </h3>");
+        document.writeln("Character Code at 5th position : " + str2.charCodeAt(5));
+
+
+        document.writeln("<h3>concat() : </h3>");
+        document.writeln("Concatenated String is : " + str1.concat(str2,str3));
+
+
+        document.writeln("<h3>indexOf() : </h3>");
+        document.writeln("Example 1 : Index of 'o' in str2 is : " + str2.indexOf('o'));
+        document.writeln("<br>Example 2 : Index of 'o' in str2 is : " + str2.indexOf('o',4));
+        document.writeln("<br>Example 3 : Index of 'You' in str2 is : " + str2.indexOf('You'));
+        document.writeln("<br>Example 4 : Index of 'b' in str2 is : " + str2.indexOf('b'));
+
+
+        document.writeln("<h3>lastIndexOf() : </h3>");
+        document.writeln("Last Index of 'm' using indexOf() in str2 is : " + str4.indexOf('m'));
+        document.writeln("<br>Last Index of 'm' using lastIndexOf() in str2 is : " + str4.lastIndexOf('m'));
+
+
+        document.writeln("<h3>search() : </h3>");
+        document.writeln("Check if 'javascript' exists in str4 : " + str5.search('javascript'));
+        document.writeln("<br>Check if 'javascript' exists in str4 : " + str5.search('Javascript'));
+        document.writeln("<br>Check if 'javascript' exists in str4 : " + str5.search(/Javascript/i));
+
+
+        document.writeln("<h3>match() : </h3>");
+        document.writeln("Match if 'java' exists in str4 : " + str5.match('java'));
+        document.writeln("<br>Check if 'Language' exists in str4 : " + str5.match('Language'));
+        document.writeln("<br>Check if 'Language' exists in str4 : " + str5.match(/Language/i));
+
+
+
+    </script>
+
+</body>
+
+</html>
