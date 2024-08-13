@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>String ReplaceMethod</title>
+</head>
+
+<body>
+    <script type="text/javascript">
+        document.writeln("<h3>replace() : </h3>");
+        str1 = "This is LearnEarn!";
+        str2 = "This is HTML, HTML is a must to learn Web Desigining";
+        str3 = "This is HTML, html is a must to learn Web Desigining";
+
+        document.writeln("Incorrect String is : " + str1);
+        document.writeln("<br>Corrected String is : " + str1.replace('Earn','Vern'));
+        
+        document.writeln("<br><br>Example : 1 Replace HTML : " + str2.replace('HTML','CSS'));
+        document.writeln("<br>Example : 2 Replace HTML : " + str2.replace(/HTML/g,'CSS'));
+        
+        document.writeln("<br><br>Example 1 : Replace HTML : " + str3.replace(/HTML/g,'CSS'));
+        document.writeln("<br>Example 2 : Replace HTML : " + str3.replace(/HTML/gi,'CSS'));
+
+        /*replace() : It replaces a given string with the specified replacements.*/
+    </script>
+
+</body>
+
+</html>
