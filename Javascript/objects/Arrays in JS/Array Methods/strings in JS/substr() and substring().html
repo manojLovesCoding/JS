@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>substr() and substring()</title>
+</head>
+
+<body>
+    <script type="text/javascript">
+        document.writeln("<h3>substr() : </h3>");
+        str1 = "This is HTML, html is a must to learn Web Designing";
+        
+        document.writeln("Old generated string using substr() is : " + str1.substr());
+        document.writeln("<br><br>1.New generated string After giving starting position using substr() is : " + str1.substr(14));
+        document.writeln("<br>2.New generated string After giving starting and ending position using substr() is : " + str1.substr(14,10));
+        /*the argument 10 is a length whereas in the line 22 the argument 21 is the index of the element*/
+        document.writeln("<br>3.New generated string After giving starting and ending position using substr() is : " + str1.substr(-14,10));
+
+
+        document.writeln("<h3>substring() :</h3>");
+        document.writeln("Old generated string using substring() is : " + str1.substring());
+        document.writeln("<br><br>1.New generated string using substring() is : " + str1.substring(14));
+        document.writeln("<br>2.New generated string using substring() is : " + str1.substring(14,21));
+
+
+        /*  substr() : It is used to fetch the part of the given string
+            on the basis of the specified starting position and length.
+            
+            substring() : It is used to fetch the part of the given string on the basis of the specified index. 
+        */
+    </script>
+
+</body>
+
+</html>
