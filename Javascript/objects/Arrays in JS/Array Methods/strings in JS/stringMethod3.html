@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>String Methods Part - 3</title>
+</head>
+
+<body>
+    <script type="text/javascript">
+        document.writeln("<h3>toString() : </h3>");
+        str1 = "This is LearnEarn!";
+        str2 = new String("This string is defined using object");
+        str3 = "     This is a string wihout space    ";
+
+        document.writeln("Use toString() on a string : " + str1.toString());
+
+
+        document.writeln("<h3>valueOf() : </h3>");
+        document.writeln("The value of str2 using valueOf() : " + str2.valueOf());
+
+
+        document.writeln("<h3>split() : </h3>");
+        document.writeln("1.str2 after applying split() : " + str2.split("h"));
+        document.writeln("<br>2.str2 after applying split() : " + str2.split(" "));
+        /*Note : split() : It splits a string into substring array, then returns that newly created array*/
+
+
+        document.writeln("<h3>trim() : </h3>");
+        document.writeln("1.str2 after applying split() : " + str2.split());
+        document.writeln("<br>2.str3 after applying split() : " + str3.split());
+        /*trim method is used to remove spaces from the left and right side of the string*/
+    </script>
+
+</body>
+
+</html>
