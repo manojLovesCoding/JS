@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Example Math()</title>
+    <style type="text/css">
+        h3 {
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <script type="text/javascript">
+        document.writeln("<h3>Math Metods : </h3>")
+
+        var num1 = -4;
+
+        function randomNumber(){
+            return Math.random()*100000;
+        }
+        document.writeln("<h4>abs() : </h4>");
+        document.writeln("abs() of " + num1 + " : " + Math.abs());
+        document.writeln("abs() 0f 4"  + " : " + Math.abs(4));
+        document.writeln("<br>abs() 0f []"  + " : " + Math.abs([]));
+        document.writeln("<br>abs() 0f [2,7]"  + " : " + Math.abs([2,7]));
+        document.writeln("<br>abs() 0f null"  + " : " + Math.abs(null));
+        document.writeln("<br>abs() 0f empty"  + " : " + Math.abs());
+
+
+       document.writeln("<h4>ceil() : </h4>");
+       document.writeln("ceil() 0f 4.2"  + " : " + Math.ceil(4.2));
+       document.writeln("<br>ceil() 0f 7.6"  + " : " + Math.ceil(7.6));
+       document.writeln("<br>ceil() 0f -4.2"  + " : " + Math.ceil(-4.2));
+
+
+       document.writeln("<h4>exp() : </h4>");
+       document.writeln("exp() 0f 1"  + " : " + Math.exp(1));
+       document.writeln("<br>exp() 0f 2"  + " : " + Math.exp(2));
+
+
+        document.writeln("<h4>floor() : </h4>");
+        document.writeln("<br>floor() 0f 7.6"  + " : " + Math.floor(7.6));
+        document.writeln("<br>ceil() 0f -4.2"  + " : " + Math.floor(-4.2));
+
+
+        document.writeln("<h4>log() : </h4>");
+        document.writeln("<br>log() 0f 1"  + " : " + Math.log(1));
+        document.writeln("<br>log() 0f 10"  + " : " + Math.log(10));
+
+
+        document.writeln("<h4>max() and min() : </h4>");
+        document.writeln("Maximum num from 7,6,8,1,9,2 : " + Math.max(7,6,8,1,9,2));
+        document.writeln("<br>Minimum num from 7,6,8,1,9,2 : " + Math.min(7,6,8,1,9,2));
+
+
+        document.writeln("<h4>pow() : </h4>");
+        document.writeln("2 to the power 3 is : " + Math.pow(2,3));
+
+
+        document.writeln("<h4>random() : </h4>");
+        document.writeln("1.random number between 0 and 1 : : " + Math.random());
+        document.writeln("<br>2.create an OTP usng Math.floor() : " + Math.floor(randomNumber()));
+
+
+        document.writeln("<h4>round() : </h4>");
+        document.writeln("round value of 7.2 : " + Math.round(7.2));
+        document.writeln("<br>round value of 7.7 : " + Math.round(7.7));
+        document.writeln("<br>round value of -0.6 : " + Math.round(-0.6));
+
+
+        document.writeln("<h4>sign() : </h4>");
+        document.writeln("sign() value of 5 : " + Math.round(5));
+        document.writeln("<br>sign of -5 : " + Math.round(-5));
+        document.writeln("<br>sign of 0 : " + Math.round(0));
+
+
+        document.writeln("<h4>sqrt() : </h4>");
+        document.writeln("sqrt() value of 1 : " + Math.sqrt(4));
+        document.writeln("<br>sqrt() value of 1.8452 : " + Math.sqrt(1.8452));
+
+
+        document.writeln("<h4>cube() : </h4>");
+        document.writeln("cube rt() value of 8 : " + Math.cbrt(8));
+        document.writeln("<br>cube rt() value of 1.8452 : " + Math.cbrt(1.8452));
+
+
+        document.writeln("<h4>trunc() : </h4>");
+        document.writeln("trunc value of 1.8452 : " + Math.trunc(1.8452))
+    </script>
+
+</body>
+
+</html>
