@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Number and Number Constant()</title>
+    <style type="text/css">
+        h3 {
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <script type="text/javascript">
+        document.writeln("<h3>JS Constants</h3>");
+         /*Intialize numbers in JS*/
+        var x = 2;
+        var y = 2.785;
+        var z = 45e2;
+        var a = new Number(16);
+
+        document.writeln("MIN_VALUE : " + + Number.MIN_VALUE);
+        document.writeln("<br>MAX_VALUE : " + + Number.MAX_VALUE);
+        document.writeln("<br>POSITIVE_INFINITY : " + + Number.POSITIVE_INFINITY);
+        document.writeln("<br>NEGATIVE_INFINITY : " + + Number.NEGATIVE_INFINITY);
+        document.writeln("<br>NAN : " + + Number.isNaN + "<br>");
+
+        document.writeln("to check 'g' is a number : " + Number.isNaN('g') + "<br>");
+        document.writeln("to check '2' is a number : " + Number.isNaN('2') + "<br>");
+        document.writeln("to check 'hello' is a number : " + isNaN('hello') + "<br>");
+        document.writeln("to check 'g' is a number : " + isNaN('g') + "<br>");
+        document.writeln("to check '2' is a number : " + isNaN(2) + "<br>");
+    </script>
+
+</body>
+
+</html>
