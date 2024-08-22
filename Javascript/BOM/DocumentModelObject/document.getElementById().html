@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Example document.getElementById()</title>
+    <style type="text/css">
+
+    </style>
+</head>
+
+<body>
+    <form>
+        Enter Telephone Number : <input type="text" id="telephone">
+        <br><br>
+        <input type="button" value="Show Contact Number" onclick="showNumber()">
+    </form>
+    <script type="text/javascript">
+        function showNumber() {
+            var telephoneNumber = document.getElementById("telephone").value;
+            alert("Telephone Number : " + telephoneNumber);
+        }
+    </script>
+
+
+</body>
+
+</html>

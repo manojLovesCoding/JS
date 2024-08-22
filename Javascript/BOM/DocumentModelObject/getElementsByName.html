@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Example document.getElementsByName()</title>
+    <style type="text/css">
+
+    </style>
+</head>
+
+<body>
+
+    <script type="text/javascript">
+        function showElements() {
+            var x = document.getElementsByName("gender");
+            alert("Total Genders available : " + x.length);
+        }
+    </script>
+
+    <form>
+        Male : <input type="radio" name="gender" value="Male"><br>
+        FeMale : <input type="radio" name="gender" value="FeMale"><br>
+
+        <input type="button" value="Show Data" onclick="showElements()">
+    </form>
+
+</body>
+
+</html>
