@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Class Declaration - 2</title>
+</head>
+
+<body>
+    <!--2.Re-declaring class-->
+    <script class="test/javascript">
+        var emp = class {
+            constructor(id, name) {
+                this.id = id;
+                this.name = name;
+            }
+
+            details() {
+                document.writeln(this.id + " " + this.name + "<br>");
+            }
+        };
+
+        var object1 = new emp(1, "ABC");
+        object1.details();
+
+        var object2 = new emp(2, "def");
+        object2.details();
+
+        var emp = class {
+            constructor(id, name) {
+                this.id = id;
+                this.name = name;
+            }
+
+            details() {
+                document.writeln(this.id + " " + this.name + "<br>");
+            }
+        };
+
+        var object3 = new emp(3, "ABCE");
+        object3.details();
+
+        var object4 = new emp(4, "defg");
+        object4.details();
+    </script>
+</body>
+
+</html>
