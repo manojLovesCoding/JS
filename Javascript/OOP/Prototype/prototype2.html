@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Example Prototype - 2</title>
+</head>
+
+<body>
+
+    <script class="test/javascript">
+        function Employee(firstName, lastName) {
+            this.firstName = firstName;
+            this.lastName = lastName;
+        }
+
+        //created prototype for property
+        Employee.prototype.company = "LearnVern"
+
+        var emp1 = new Employee("Rahul", "Bose");
+        var emp2 = new Employee("Nithin", "Kumar");
+
+        document.writeln(emp1.firstName + " " + emp1.lastName + " " + emp1.company + "<br>");
+        document.writeln(emp2.firstName + " " + emp2.lastName + " " + emp2.company + "<br>");
+    </script>
+</body>
+
+</html>
