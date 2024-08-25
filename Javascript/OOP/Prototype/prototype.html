@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Example Prototype - 1</title>
+</head>
+
+<body>
+
+    <script class="test/javascript">
+        function Employee(firstName, lastName) {
+            this.firstName = firstName;
+            this.lastName = lastName;
+        }
+
+        //created prototype for function
+        Employee.prototype.fullName = function () {
+            return this.firstName + " " + this.lastName;
+        }
+
+        var emp1 = new Employee("Rahul", "Bose");
+        var emp2 = new Employee("Nithin", "Kumar");
+
+        document.writeln(emp1.fullName() + "<br>");
+        document.writeln(emp2.fullName() + "<br>");
+    </script>
+</body>
+
+</html>
