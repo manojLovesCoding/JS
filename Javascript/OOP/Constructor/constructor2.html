@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>2.Example Constructor using super</title>
+</head>
+
+<body>
+
+    <script class="test/javascript">
+        class CompanyName {
+            constructor() {
+                this.companyName = "LearVern";
+            }
+        }
+
+        class Employee extends CompanyName {
+            constructor(id, name) {
+                super();
+                this.id = id;
+                this.name = name;
+            }
+        }
+
+        var emp = new Employee(100, "Amit");
+        document.writeln(emp.id + " " + emp.name + " " + emp.companyName);
+    </script>
+</body>
+
+</html>
