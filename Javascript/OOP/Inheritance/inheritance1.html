@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Example Inheritance built-in class</title>
+</head>
+
+<body>
+    <script class="test/javascript">
+        class Moment extends Date {
+            constructor() {
+                super();
+            }
+        }
+
+        var m = new Moment();
+        document.writeln("Today's Date : " + m.getDate() + "-" + (m.getMonth() + 1) + "-" + m.getFullYear());
+    </script>
+</body>
+
+</html>
