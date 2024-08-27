@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Example Polymorphism - 3 Prototype-based Approach</title>
+</head>
+
+<body>
+    <script class="test/javascript">
+        function A() {
+
+        }
+
+        A.prototype.display = function () {
+            return "A class's display method is called";
+        }
+
+        function B() {
+
+        }
+
+        B.prototype = Object.create(A.prototype);
+
+        B.prototype.display = function () {
+            return "B class's display method is called";
+        }
+
+        var a = [new A(), new B()];
+        a.forEach(function (message) {
+            document.writeln(message.display() + "<br>");
+        })
+
+
+    </script>
+</body>
+
+</html>
