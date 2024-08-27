@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Example - 2 : Prototype-based approach</title>
+</head>
+
+<body>
+    <!--Prototype based approach for Encapsulating Property and Methods-->
+    <script class="test/javascript">
+        function Student(name, marks) {
+            var sName = name;
+            var smarks = marks;
+
+            Object.defineProperty(this, "name", {
+                get: function () {
+                    return sName;
+                },
+                set: function (sName) {
+                    this.sName = sName;
+                }
+            });
+
+            Object.defineProperty(this, "marks", {
+                get: function () {
+                    return smarks;
+                },
+                set: function (smarks) {
+                    this.smarks = smarks;
+                }
+            });
+        }
+
+        var stud = new Student("Joel", 20);
+        document.writeln(stud.name + " has secured " + stud.marks);
+    </script>
+</body>
+
+</html>
