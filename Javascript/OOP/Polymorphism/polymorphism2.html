@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Example Polymorphism - 2</title>
+</head>
+
+<body>
+    <script class="test/javascript">
+        class Parent {
+            display() {
+                document.writeln("Parent class's display method is called or Person acts as child to his Parents");
+            }
+        }
+
+        class Wife extends Parent {
+            display() {
+                document.writeln("Wife class's display method is called or Person acts as Husband to his Wife");
+            }
+        }
+
+        var person = [new Parent(), new Wife()];
+        person.forEach(function (message) {
+            message.display();
+            document.writeln("<br>");
+        })
+    </script>
+</body>
+
+</html>
