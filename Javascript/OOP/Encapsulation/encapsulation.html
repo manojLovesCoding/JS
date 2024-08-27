@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Example 1 : getter and setter methods</title>
+</head>
+
+<body>
+    <script class="test/javascript">
+        class Student {
+            constructor() {
+                var name;
+                var marks;
+            }
+
+            getName() {
+                return this.name;
+            }
+
+            setName(name) {
+                this.name = name;
+            }
+
+            getMarks() {
+                return this.marks;
+            }
+
+            setMarks(marks) {
+                this.marks = marks;
+            }
+        }
+
+        var stud = new Student();
+        stud.setName("Joel");
+        stud.setMarks(20);
+
+        document.writeln(stud.getName() + " has secured " + stud.getMarks());
+    </script>
+</body>
+
+</html>
