@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>3.same name for static methods</title>
+</head>
+
+<body>
+    <script class="test/javascript">
+        class Test {
+            static display() {
+                return "A Static method 1 is called"
+            }
+
+            static display() {
+                return "A Static method 2 is called"
+            }
+        }
+        document.writeln(Test.display());
+    </script>
+</body>
+
+</html>
