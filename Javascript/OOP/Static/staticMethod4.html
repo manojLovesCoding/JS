@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>4.calling static method through Constructor</title>
+</head>
+
+<body>
+    <script class="test/javascript">
+        class Test {
+            constructor() {
+                document.writeln(Test.display() + "<br>");
+                document.writeln(this.constructor.display());
+            }
+
+            static display() {
+                return "A Static method 1 is called";
+            }
+        }
+        var t = new Test();
+    </script>
+</body>
+
+</html>
