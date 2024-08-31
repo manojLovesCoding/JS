@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Example Mouse Events</title>
+	<style type="text/css">
+		.rect{
+			width: 100px;
+			height: 100px;
+			background-color: cyan;
+			margin: 10px;
+		}
+	</style>
+</head>
+<body>
+	<input type="button" value="Change Background" onclick="changeBackground()" >
+	<div class="rect" onmouseover="onMouseOver()" onmouseout="onMouseOut()" onmouseup="onMouseUp()" onmousedown="onMouseDown()" onmousemove="onMouseMove()">
+		
+	</div>
+
+	<script type="text/javascript">
+		function changeBackground() {
+			document.body.style.background='yellow';
+		}
+
+		function onMouseOver() {
+			document.body.style.background='green';
+		}
+
+		function onMouseOut(){
+			document.body.style.background='white';
+		}
+
+		function onMouseUp(){
+			document.body.style.background='blue';
+		}
+
+		function onMouseDown(){
+			alert("Mouse Down Event is fired");
+		}
+		function onMouseMove(){
+			document.body.style.background='black';
+		}
+
+	</script>
+</body>
+</html>
