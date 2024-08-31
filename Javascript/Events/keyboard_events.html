@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Example Keyboard Events</title>
+	<style type="text/css">
+		.rect{
+			width: 100px;
+			height: 100px;
+			background-color: cyan;
+			margin: 10px;
+		}
+	</style>
+</head>
+<body>
+	<input type="text" onkeydown="onKeyDown()" onkeyup="onKeyUp()">
+	<!--<div class="rect" onkeydown="onkeyDown()"></div>-->
+
+	<script type="text/javascript">
+		function onKeyDown(){
+			document.body.style.background="yellow";
+		}
+
+		function onKeyUp(){
+			document.body.style.background="green";
+		}
+	</script>
+</body>
+</html>
