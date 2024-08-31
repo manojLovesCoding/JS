@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Example addEventListener mutliple click </title>
+</head>
+<body>
+
+	<!--addEventListener Syntax
+		Syntax : element.addEventListener(event,function,useCapture);-->
+	
+	<button id="clickButton">Click Me!</button>
+	<p id="line1"></p>
+	<p id="line2"></p>
+
+	<script type="text/javascript">
+		document.getElementById('clickButton').addEventListener("click",changeBackground);
+		document.getElementById('clickButton').addEventListener("click",updateLine1);
+		document.getElementById('clickButton').addEventListener("click",updateLine2)
+
+		function changeBackground(){
+			document.body.style.background="yellow";
+		}
+
+		function updateLine1(){
+			document.getElementById('line1').innerHTML="Welcome to LearnVern";
+		}
+
+		function updateLine2(){
+			document.getElementById('line2').innerHTML="Great Place to Learn Javascript";
+		}
+	</script>
+</body>
+</html>
