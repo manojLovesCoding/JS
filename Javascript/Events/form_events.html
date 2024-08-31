@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Example Form Events</title>
+	<style type="text/css">
+		
+	</style>
+</head>
+<body>
+
+	<form onsubmit="onSubmit()">
+		<input type="text" onfocus="onFocus()" onblur="onBlur()">
+		<select id="myDropdown" onchange="onChange()">
+			<option>Select</option>
+			<option>Male</option>
+			<option>Female</option>
+		</select>
+		<input type="submit" value="Submit">
+	</form>
+
+	<script type="text/javascript">
+		function onFocus(){
+			document.body.style.background="yellow";
+		}
+
+		function onBlur(){
+			document.body.style.background="white";
+		}
+
+		function onChange(){
+			document.body.style.background="lightgreen";
+		}
+
+		function onSubmit(){
+			alert("Form submitted successfully!");
+		}
+	</script>
+</body>
+</html>
