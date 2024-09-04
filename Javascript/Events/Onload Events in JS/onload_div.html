@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Example onload </title>
+
+</head>
+<!--Here,I have generated a dic using window.onload method-->
+
+<body>
+    <h1>There is a div below:</h1>
+    <div id="backGround"></div>
+
+    <script type="text/javascript">
+        document.onload = alert("Hello");
+        window.onload = function () {
+            var x = document.getElementById('backGround');
+            x.style.background = "cyan";
+            x.style.width = "200px";
+            x.style.height = "200px";
+        }
+
+    </script>
+</body>
+
+</html

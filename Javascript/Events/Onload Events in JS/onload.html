@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Example onload </title>
+
+</head>
+<!--Here,U need to understand that 2 methods exists and which one is executed first.
+The document.onload method is executed first then the second one window.onload method-->
+
+<body>
+	<h1>This is Header</h1>
+
+	<script type="text/javascript">
+		document.onload = alert("This is Document.OnLoad Method");
+		window.onload = alert("This is Window.OnLoad Method");
+
+	</script>
+</body>
+
+</html
