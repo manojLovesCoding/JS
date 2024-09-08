@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Example Promise chaining using new Promise</title>
+</head>
+
+<body>
+    <script type="text/javascript">
+        new Promise(function (resolve, reject) {
+            setTimeout(() => {
+                resolve(1)
+            }, 5000);
+        }).then(function (value) {
+            alert(value);
+            return new Promise(function (resolve, reject) {
+                setTimeout(() => {
+                    resolve(value * 2)
+                }, 5000);
+            })
+        }).then(function (value) {
+            alert(value);
+            return new Promise(function (resolve, reject) {
+                setTimeout(() => {
+                    resolve(value * 3)
+                }, 5000);
+            })
+        }).then(function (value) {
+            alert(value);
+        })
+
+    </script>
+</body>
+
+</html>

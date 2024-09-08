@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Example Promise chaining using then</title>
+</head>
+
+<body>
+    <script type="text/javascript">
+        new Promise(function (resolve, myreject) {
+            setTimeout(() => {
+                resolve(1)
+            }, 5000);
+        }).then(function (value) {
+            alert(value);
+            return value * 2;
+        }).then(function (value) {
+            alert(value);
+            return value * 3;
+        }).then(function (value) {
+            alert(value);
+            return value * 4;
+        }).then(function (value) {
+            alert(value);
+        })
+    </script>
+</body>
+
+</html>
