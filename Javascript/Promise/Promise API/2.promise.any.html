@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Example Promise.race</title>
+</head>
+<body>
+	<script type="text/javascript">
+		Promise.any([
+			new Promise((resolve,reject)=>setTimeout(reject(new Error("Its an Error!!!")),1000)),
+			new Promise((resolve,reject)=>setTimeout(reject(new Error("Its an Error Again!!!")),1000)),
+			]).catch(error=>{
+			console.log(error.errors[0]);
+			console.log(error.errors[1]);
+		});
+	</script>
+</body>
+</html>
+
+<!--Here i have written such promise which are going to be rejected then we will get that in the catch other wise if my promise contain such one promise that can be sucessfully resloved that i will get in output.-->
