@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Example Promise.race</title>
+</head>
+<body>
+	<script type="text/javascript">
+		Promise.race([
+			new Promise(reject=>setTimeout(reject(new Error("Its an Error!!!")),3000)),
+			new Promise(resolve=>setTimeout(resolve(1),3000)),
+			new Promise(resolve=>setTimeout(resolve(2),2000))
+			]).then(alert);
+	</script>
+</body>
+</html>
+
+<!--The Task of Promise.race : To wait for only first settled promise and give results.It will not wait other promise to settle -->
