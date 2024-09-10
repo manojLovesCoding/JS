@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Example await</title>
+</head>
+<body>
+	<p id="result"></p>
+	<script type="text/javascript">
+		async function myDisplay(){
+			let promise = new Promise(function(resolve,reject){
+				setTimeout(function(){resolve("LearnVern is Awesome")},3000);
+			});
+
+			document.getElementById("result").innerHTML=await promise;
+		}
+
+		myDisplay();
+	</script>
+</body>
+</html>
+
+<!--Note : 1.we use async when we want our function to behave like a promise
+		   2.if you want to use async then using await is mandatory.await will not work without async-->
