@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Example Promise.all</title>
+</head>
+<body>
+	<script type="text/javascript">
+		Promise.all([
+			new Promise(resolve=>setTimeout(resolve(1),3000)),
+			new Promise(reject=>setTimeout(reject(new Error("Its an Error!!!")),3000)),
+			new Promise(resolve=>setTimeout(resolve(2),2000))
+			]).then(alert);
+	</script>
+</body>
+</html>
+
+<!--What is the work of Promise.all : Taking input in the form of array and giving output in the form of array.Each and every promise will be executed successfully -->
