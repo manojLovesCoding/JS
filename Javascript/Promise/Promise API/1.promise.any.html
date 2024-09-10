@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Example Promise.race</title>
+</head>
+<body>
+	<script type="text/javascript">
+		Promise.any([
+			new Promise((resolve,reject)=>setTimeout(reject(new Error("Its an Error!!!")),1000)),
+			new Promise((resolve,reject)=>setTimeout(resolve(1),5000)),
+			new Promise((resolve,reject)=>setTimeout(resolve(2),5000)),
+			]).then(alert).catch(error=>{
+			console.log(error.errors[0])
+		});
+	</script>
+</body>
+</html>
+<!--if my promise contain such one promise that can be sucessfully resloved that i will get in output.The reject promise of error is getting completely removed in this program.-->
