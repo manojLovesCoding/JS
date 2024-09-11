@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Example fill()</title>
+</head>
+<body>
+	<script type="text/javascript">
+		var arr=[1,2,3,4,5,6,7,8,9,10];
+		
+		/*arr.fill(value)*/
+		arr.fill(15);
+		document.writeln("arr.fill(15) : "+ arr + "<br>");
+
+		/*arr.fill(value,start)*/
+		arr.fill(15,1);
+		document.writeln("arr.fill(15,1) : "+ arr + "<br>");
+
+		/*arr.fill(value,start,end)*/
+		arr.fill(15,1,5);
+		document.writeln("arr.fill(15,1,5) : "+arr);
+		
+	</script>
+</body>
+</html>
