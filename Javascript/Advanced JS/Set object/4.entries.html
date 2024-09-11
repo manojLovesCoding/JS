@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title> Example entries()</title>
+</head>
+<body>
+	<script type="text/javascript">
+		var s=new Set();
+
+		s.add("HTML");
+		s.add("CSS");
+		s.add("JS");
+
+		var iteration = s.entries();
+
+		for(value of iteration){
+			document.writeln(value+"<br>");
+		}
+	</script>
+</body>
+</html>

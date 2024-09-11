@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title> Example forEach()</title>
+</head>
+<body>
+	<script type="text/javascript">
+		var s=new Set();
+
+		s.add("HTML");
+		s.add("CSS");
+		s.add("JS");
+
+		s.forEach(function(value1,value2,s){
+			document.writeln("key[" + value1 + "] = " + value2 + "<br>");
+		})
+	</script>
+</body>
+</html>

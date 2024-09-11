@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Example set object : add()</title>
+</head>
+<body>
+	<script type="text/javascript">
+		var s=new Set();
+
+		s.add("HTML");
+		s.add("CSS");
+		s.add("JS");
+		s.add("HTML");//Trying to add existing value to Set
+
+		for(value of s){
+			document.writeln(value+"<br>");
+		}
+	</script>
+</body>
+</html>
