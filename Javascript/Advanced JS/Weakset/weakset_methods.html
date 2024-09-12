@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Example weakset methods</title>
+</head>
+<body>
+	<script type="text/javascript">
+		var w = new WeakSet();
+
+		var object1={};
+		var object2={};
+
+		w.add(object1);
+		w.add(object2);
+
+		document.writeln("Before deleting object2 <br><br>");
+
+		document.writeln("To check if 'object1' exist in WeakSet 'W' : " + w.has(object1) + "<br>");
+		document.writeln("To check if 'object2' exist in WeakSet 'W' : " + w.has(object2) + "<br><br>");
+
+		document.writeln("After deleting object2 <br><br>");
+		w.delete(object2);
+		document.writeln("To check if 'object1' exist in WeakSet 'W' : " + w.has(object1) + "<br>");
+		document.writeln("To check if 'object2' exist in WeakSet 'W' : " + w.has(object2) + "<br>");
+
+	</script>
+</body>
+</html>
