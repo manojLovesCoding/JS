@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Example Closures - 1</title>
+</head>
+<body>
+	<script type="text/javascript">
+		function function1(){
+			var a=2;
+
+			function function2(){
+				return a;
+			}
+
+			return function2;
+		}
+
+		var result = function1();
+		document.writeln(result());
+	</script>
+</body>
+</html>
