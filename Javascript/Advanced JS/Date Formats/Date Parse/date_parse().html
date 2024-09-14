@@ -1,0 +1,26 @@
+<!--Note : This program is about converting date into milliseconds using parse method-->
+
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Example Date.parse() method</title>
+</head>
+<body>
+	<script type="text/javascript">
+		var d1 = new Date("2024-01-01");
+		var d2 = "Sep 14, 2024"; //This will show a valid output
+		var d3 = "Sep 46, 2024"; //This will show a Invalid output
+
+		var result = Date.parse(d1);
+		var result2 = Date.parse(d2);
+		var result3 = Date.parse(d3);
+
+		//document.writeln("Result after parsing in milliseconds is : " + result);
+		//document.writeln("Result after parsing in milliseconds is : " + result2);
+		document.writeln("Result after parsing in milliseconds is : " + result3);
+	</script>
+</body>
+</html>
+
