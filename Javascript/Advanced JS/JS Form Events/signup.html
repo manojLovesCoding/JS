@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Sign Up</title>
+</head>
+<body align="center">
+	<h4>create Your Account</h4>
+
+	<table cellspacing="2" align="center" cellpadding="8" border="0">
+		
+		<tr>
+			<td>Name</td>
+			<td><input type="text" placeholder="Enter Your Name" id="name"></td>
+		</tr>
+
+		<tr>
+			<td>Email</td>
+			<td><input type="text" placeholder="Enter Your Email" id="email"></td>
+		</tr>
+
+		<tr>
+			<td>Password</td>
+			<td><input type="text" placeholder="Enter Your Password" id="password"></td>
+		</tr>
+
+		<tr>
+			<td>Confirm Password</td>
+			<td><input type="text" placeholder="Enter Your Confirm Password" id="confirmPassword"></td>
+		</tr>
+
+		<tr>
+			
+			<td><input type="submit" value="Create" onclick="createAccount()"></td>
+		</tr>
+
+	</table>
+
+	<script type="text/javascript">
+		
+		function createAccount(){
+			var name = document.getElementById("name").value;
+			var email = document.getElementById("email").value;
+			var password = document.getElementById("password").value;
+			var confirmPassword = document.getElementById("confirmPassword").value;
+
+			var letters = /^[A-Za-z]+$/;
+			var email_value = /^([a-zA-Z0-9_\.\-])+\@(([a-zA-Z0-9\-])+\.)+([a-zA-Z0-9]{2,3})+$/;
+
+			if(name == "" || email == "" || password == "" || confirmPassword == ""){
+				alert("Enter all the Details");
+			}else if(!letters.test(name)){
+				alert("Name is incorrect and must contain alphabets only.")
+			}else if(!email_value.test(email)){
+				alert("Email Id is not in Format");
+			}else if(password != confirmPassword){
+				alert("Password is not matching")
+			}else if(document.getElementById("password").value.length > 12){
+				alert("Maximum length for password is 12");
+			}else if(document.getElementById("password").value.length < 6){
+				alert("Minimum length for password is 6");
+			}else{
+				alert("Your Accont has been created Successfully...");
+				window.location = "loginPage.html";
+			}
+		}
+
+	</script>
+
+</body>
+</html>
