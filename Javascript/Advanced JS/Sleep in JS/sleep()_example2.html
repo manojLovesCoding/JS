@@ -1,0 +1,23 @@
+<!--Here i learnt,With help of es6 arrow method How we can work with the returning promise-->
+
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Example sleep() - 2nd way</title>
+</head>
+<body>
+<script type="text/javascript">
+	let sleep = milliseconds => {
+		return new Promise(resolve => setTimeout(resolve,milliseconds));
+	}
+	document.writeln("The program execution is started");
+	document.writeln("Welcome to LearnVern <br>");
+
+	sleep(2000).then( () => {
+		document.writeln("The program execution is ended");
+	});
+</script>
+</body>
+</html>
