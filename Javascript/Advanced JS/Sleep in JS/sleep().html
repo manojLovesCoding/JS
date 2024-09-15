@@ -1,0 +1,26 @@
+<!--Here i learnt, with the help of normal function execution How we can work with the returning promise-->
+
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Example sleep() - 1 ways</title>
+</head>
+<body>
+<script type="text/javascript">
+	function sleep(milliseconds){
+		return new Promise(resolve=>setTimeout(resolve,milliseconds));
+	}
+
+	async function example(){
+		for(let i=0;i<10;i++){
+			await sleep(2000);
+			document.writeln(i + ". Welcome to Learnvern.com <br>");
+		}
+	}
+
+	example();
+</script>
+</body>
+</html>
